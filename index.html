@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <title>Red Magic</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Bootstrap jQ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="container-text headline">
+            <div class="row">
+                <div class="col-50"><img src="mobile.png" alt=""></div>
+                <div class="col-50">
+                    <div class="text-wrap">
+                        <img class="mars-font" src="mars-font.svg">
+                        <p>Join our pre-order event to lock down exclusive perks and freebies! </p>
+                        <div class="input-line"></div>
+                        <input type="text" name="subscribe" placeholder="Don’t miss the supply drop! Subscribe now.">
+                        <button type="submit" value="Submit"><img src="arrow.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tabs-section">
+        <div class="container-text">
+            <!-- first part -->
+            <div class="numbers-wrapper tablinks"  onclick="openCity(event, 'London')"d>
+                <div class="numbers no" id="1">
+                   01  
+                </div>
+                <div class="button">
+                    Early adopted Discount
+                </div>
+            </div>
+            <div class="numbers-wrapper tablinks" onclick="openCity(event, 'Paris')">
+                <div class="numbers no" id="2">
+                     02 
+                </div>
+                <div class="button" >
+                    Free gift package
+                </div>
+            </div>
+            <div class="numbers-wrapper tablinks" onclick="openCity(event, 'Tokyo')">
+                <div class="numbers no">
+                     03
+                </div>
+                <div class="button" >
+                    Refund Roulette
+                </div>
+            </div>
+            <div class="numbers-wrapper tablinks" onclick="openCity(event, 'NoviSad')">
+                <div class="numbers no">
+                     04 
+                </div>
+                <div class="button">
+                    Free VIP Shipping
+                </div>
+            </div>
+      
+
+            <!-- second part -->
+
+            <div class="order-box">
+                <div id="arrow-left" class="arrow-wrapp arrow"><span class="arrow-left"></div>
+                  
+                <div class="order-wrapper tabcontent slide" id="London">
+                    <p class="text1">Save $10 on the Red Magic Mars when you Pre-order.</p>
+                    <!-- <span class="btn-span">Limited offer</span> -->
+                    <img class="mobiles" src="mobiles.png">
+
+                    <div class="wrapp-text">
+                        <h3>Phone version 1</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+                        <h3>Phone version 2</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <p class="text-bottom-1">Early adopted discount</p>
+
+                </div>
+                <!-- 2 -->
+                <div class="order-wrapper tabcontent slide" id="Paris">
+                    <p class="text2">Pre- order and Choose a free gift</p>
+                    <span class="btn-span">Limited - time Offer <span class="info">i</span></span>
+                    <div class="order-wrapper-inside">
+                        <div class="order-boxes">
+                            <div class="box"></div>
+                            <div class="text-wrap">
+                                <p class="paragraf">Red Magic Noobz Earphone</p>
+                                <p class="limited">Stock running low!</p>
+                            </div>
+                        </div>
+                        <div class="order-boxes">
+                            <div class="box"></div>
+                            <div class="text-wrap">
+                                <p class="paragraf">Red Magic T-shirt (Size: L)</p>
+                                <p class="limited">Limited Stock </p>
+                            </div> 
+                        </div>
+                        <div class="order-boxes">
+                            <div class="box"></div>
+                            <div class="text-wrap">
+                                <p class="paragraf">Red Magic Sticker (Size: L)</p>
+                                <p class="limited">Out of stock</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="order-wrapper tabcontent slide" id="Tokyo">
+                    <p class="text3">At the end of the pre-order event, we’ll choose 5 orders at random and provide full refunds.<p class="sec-3-p">Good luck!</p></p>
+                    <!-- <span class="btn-span">Limited offer</span> -->
+                    <div class="order-wrapper-inside"></div>
+                    <p class="text-bottom-3">Refund Roulette</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="order-wrapper tabcontent slide" id="NoviSad">
+                    <p class="text3">All pre-orders are shipped super fast (and super free).</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-12 text-center">
+                                <div class="refund-col">
+                                    <img class="refund-img" src="expedited.svg" alt="">
+                                    <h3>Expedited processing</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12 text-center">
+                                <div class="refund-col">
+                                    <img class="refund-img" src="delivery.svg" alt="">
+                                    <h3>1 - 3 day delivery</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12 text-center">
+                                <div class="refund-col">
+                                    <img class="refund-img" src="tracking.svg" alt="">
+                                    <h3>Shipment Tracking</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12 text-center">
+                                <div class="refund-col">
+                                    <img class="refund-img" src="notification.svg" alt="">
+                                    <h3>Delivery Notification</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="arrow-right" class="arrow-wrapp arrow"><span class="arrow-right"></div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-field">
+        <div class="container-text form-center">
+            <input type="text" name="subscribe" placeholder="Don’t miss the supply drop! Subscribe now.">
+            <button type="submit" value="Submit"><img src="arrow.png" alt=""></button>
+        </div>
+    </section>
+
+    <section class="tagline container-text">
+        <h1>Tagline</h1>
+        <h2>Evolution - Mars Coming</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div class="tagline-col">
+                        <img class="tagline-img" src="Assets/Tagline-Icon-Set/4D icon.svg" alt="">
+                        <h3>4D Haptic Feedback</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div class="tagline-col">
+                        <img class="tagline-img" src="Assets/Tagline-Icon-Set/Button icon.svg" alt="">
+                        <h3>Capacitive Shoulder Buttons</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div class="tagline-col">
+                        <img class="tagline-img" src="Assets/Tagline-Icon-Set/Surround icon.svg" alt="">
+                        <h3>Dual Stereo Speakers + Surround Sound</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div class="tagline-col">
+                        <img class="tagline-img" src="Assets/Tagline-Icon-Set/Cooling icon.svg" alt="">
+                        <h3>3-tier Liquid Cooling</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div class="tagline-col">
+                        <img class="tagline-img" src="Assets/Tagline-Icon-Set/RGB icon.svg" alt="">
+                        <h3>Esports-inspired RGB lightingn</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div class="tagline-col">
+                        <img class="tagline-img" src="Assets/Tagline-Icon-Set/Storage icon.svg" alt="">
+                        <h3>10GB RAM + 256GB Storage</h3>
+                    </div>
+                </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 text-center">
+                        <div class="tagline-col">
+                            <img class="tagline-img" src="Assets/Tagline-Icon-Set/CPU icon.svg" alt="">
+                            <h3>Qualcomm® Snapdragon™ 845 processor</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 text-center">
+                        <div class="tagline-col">
+                            <img class="tagline-img" src="Assets/Tagline-Icon-Set/Gaming icon.svg" alt="">
+                            <h3>Enhanced Gaming Mode</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-12 text-center last-col">
+                            <div class="tagline-col">
+                                <img class="tagline-img" src="Assets/Tagline-Icon-Set/AI icon.svg" alt="">
+                                <h3>Enhanced Gaming Mode</h3>
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+
+        <div class="video-wrapper">
+            <video src="//clips.vorwaerts-gmbh.de/VfE_html5.mp4" poster="Assets/mars-poster.png"></video>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="container-text">
+
+            <div class="row">
+                <div class="col-lg-2 col-md-12">
+                    <ul class="footer-nav footer-nav-desc">
+                        <li>Red Magic</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Phone</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                    <ul class="footer-nav footer-nav-desc">
+                        <li>Links</li>
+                        <li><a href="#">Sales and Refund</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy and Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Legal & Regulatory</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+
+                <div class="wrapp-dropdown">
+                    <!-- <div class="accordion-option">
+                        <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+                    </div> -->
+                    <div class="clearfix"></div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Red Magic</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul class="footer-nav collapse show">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Phone</a></li>
+                                        <li><a href="#">Store</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="#">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Links
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Sales and Refund</a></li>
+                                        <li><a href="#">Terms of Service</a></li>
+                                        <li><a href="#">Privacy and Policy</a></li>
+                                        <li><a href="#">Affiliate Program</a></li>
+                                        <li><a href="#">Legal & Regulatory</a></li>
+                                        <li><a href="#">Compliance</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Wrap Dropdown-->
+                <input class="footer-input" type="text" placeholder="Email address">
+                <input class="footer-submit" type="submit" value="Subscribe">
+            </div>
+
+            <div class="row">
+                <div class="col-12">Payment ikonice</div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 red-magic-footer">© Red Magic 2019</div>
+                <div class="col-12 col-md-6">
+                    <ul class="footer-social">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><img class="flag" src="/Assets/europe-flag.png" alt="europe-flag">Europe <i class="fas fa-sort-down"></i></a>
+                        </li>
+                    </ul>
+                </div>
+     
+            </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
