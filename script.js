@@ -1,16 +1,6 @@
-// / Onload set class
-window.onload = function() {
-  // document.getElementById("1").className = 'active';
-  // document.getElementsById('button').style.color = "red";
-  document.getElementById('button').style.backgroundImage = "url('btn-selected.svg')";
-  document.getElementById('button').style.backgroundRepeat = "no-repeat";
-  document.getElementById("button").classList.add("active");
-
-};
-
-
+console.log(123);
 document.getElementById('London').style.display = "block";
-// document.getElementById('button').style.color = "red";
+
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -137,4 +127,16 @@ $(document).ready(function() {
      
 });
 
+// Limited time offer i element hover
+document.querySelector('.info').addEventListener("mouseover", function(){
+  document.querySelector('.box-info1').innerHTML = "Limited number of gifts while stock last.";
+  var element = document.querySelector('.box-info1');
+  element.classList.add("box-info");
+});
 
+document.querySelector('.info').addEventListener("mouseout", function(){
+  document.querySelector('.box-info').innerHTML = "";
+  var element = document.querySelector('.box-info1');
+  element.classList.remove("box-info");
+
+});

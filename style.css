@@ -73,6 +73,7 @@ body {
 .col-50 .text-wrap input {
     border: 2px solid #06223c;
     background: #020d17;
+    color: #fff;
     height: 65px;
     width: 95%;
     margin-top: 120px;
@@ -106,6 +107,7 @@ input::placeholder {
     width: 685px;
     height: 70px;
     background: #020d17;
+    color: #fff;
     border: 2px solid #06223c;
     padding-left: 30px;
 }
@@ -137,22 +139,22 @@ input::placeholder {
 
 .tagline h1:before {
     border-bottom: 1px solid #818489;
-    top: 25px;
+    top: 45px;
     content: "";
     height: 1px;
     left: 5%;
     position: absolute;
-    width: 35%;
+    width: 25%;
 }
 
 .tagline h1:after {
     border-bottom: 1px solid #818489;
-    top: 25px;
+    top: 45px;
     content: "";
     height: 1px;
     right: 5%;
     position: absolute;
-    width: 35%;
+    width: 25%;
 }
 
 .footer {
@@ -501,16 +503,6 @@ input::placeholder {
     display: none;
 }
 
-.active1{
-    background-color: rgb(19, 30, 40);
-    /* border-left: 1px solid rgb(120, 125, 131); */
-    /* border-left: 1px solid #00adca;
-    border-right: 1px solid #00adca; */
-    background-image: url('btn-selected.svg');
-    background-repeat: no-repeat;
-    color: red;
-}
-
 .active > .button{
     background-color: rgb(19, 30, 40);
     /* border-left: 1px solid rgb(120, 125, 131); */
@@ -593,7 +585,7 @@ input::placeholder {
     text-transform: uppercase;
     font-size: 16px;
     font-family: 'IBM Plex Sans', sans-serif; 
-    color: #3a4047;
+    color: #fff;
 }
 
 .tagline > h2 {
@@ -655,6 +647,7 @@ input::placeholder {
 
 .video-wrapper {
     position: relative;
+    margin-top: 130px;
 }
 
 .video-wrapper > video {
@@ -728,14 +721,14 @@ input::placeholder {
 }
 
 .footer-social {
-    text-align: center;
+    text-align: right;
 }
 .footer-social li {
     display: inline-block;
     margin: 0 20px;
 }
 .footer-social li:last-child {
-    margin-right: 0;
+    margin-right: 10px;
 }
 .footer-social li a {
     color: #fff;
@@ -769,21 +762,58 @@ input::placeholder {
     .col-50 .text-wrap button {
         height: 48px;
     }
-
     .input-line {
         bottom: 85px;
     }
-
-    .button{
-        font-size: 12px;
-    }
 }
+
+.box-info{
+    background:#051e35;
+    border: 1px solid #00adca;
+    color: #fff;
+    font-size: 14px;
+    height: 60px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    text-transform: none;
+    top: -65px;
+    left: 60px;
+    display:block;
+    padding: 15px 35px;
+    width: 365px;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.8);
+    box-shadow: 0 2px 6px rgba(0,0,0,.8);
+} 
+.box-info:after{
+    content:'';
+    position:absolute;
+    bottom:-8px; 
+    width:15px;
+    height:15px;
+    border-bottom: 1px solid #00adca;
+    border-right: 1px solid #00adca;
+    background:#051e35;
+    left:50%;
+    margin-left:-10px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+
+
+.payment {
+    text-align: right;
+}
+
 
 /* Media Query */
 
 @media (max-width: 1080px) {
     body {
-        background: url('/Assets/background-mob.png');
+        background: url('Assets/background-mob.png');
     }
     .container-text {
         max-width: 890px;
@@ -804,8 +834,11 @@ input::placeholder {
     .col-50 .text-wrap input {
         margin-bottom: 75px;
     }
+    .col-50 .text-wrap input::placeholder {
+        font-size: 16px;
+    }
     .input-line {
-        bottom: 225px;
+        bottom: 220px;
     }
     .numbers:before {
         width: 20%
@@ -939,5 +972,153 @@ input::placeholder {
         font-size: 18px;
         font-family: 'IBM Plex Sans', sans-serif;
     }
+
+    /* --------- Tabs --------- */
+    .order-wrapper {
+        width: 100%;
+    }
+
+    .order-wrapper .mobiles {
+        width: 100%;
+    }
+
+    .order-wrapper .wrapp-text {
+        width: 100%;
+    }
+
+    .order-wrapper .wrapp-text h3 {
+        font-size: 30px
+    }
+
+    .order-wrapper .wrapp-text p {
+        font-size: 30px;
+        line-height: 1.4;
+        padding-bottom: 100px;
+    }
+    
+    .text-bottom-1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .tagline h1 {
+        font-size: 70px;
+        font-weight: 500;
+    }
+    .text2 {
+        width: 340px;
+        font-size: 35px;
+    }
+    .text3 {
+        width: 710px;
+        font-size: 40px;
+        top: -45px;
+    }
+    .sec-3-p {
+        top: 80px;
+        position: relative;
+        font-size: 40px;
+    }
 }
 
+@media (max-width: 890px) {
+    .container-text {
+        max-width: 770px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .subscribe-field .form-center input {
+        width: 99%;
+    }
+    .footer-social {
+        text-align: center;
+    }
+    .footer-social li {
+        margin: 0 10px;
+    }
+    .footer-social li:first-child {
+        margin-left: 0;
+    }
+    .red-magic-footer {
+        text-align: center;
+    }
+    .payment {
+        text-align: center;
+    }
+    .tagline h1:before {
+        width: 15%
+    }
+    .tagline h1:after {
+        width: 15%
+    }
+    /* .last-col:before {
+        width: 10%;
+        left: 6%;
+    }
+    .last-col:after {
+        width: 10%;
+        right: 6%;
+    } */
+    .last-col:before {
+        width: 0%;
+    }
+    .last-col:after {
+        width: 0%;
+    }
+    .last-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+
+    .last-col .tagline-col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .container-text {
+        max-width: 620px;
+    }
+    .col-50 img {
+        max-width: 80%;
+    }
+    .input-line {
+        bottom: 235px;
+    }
+    .subscribe-field .form-center input {
+        width: 99%;
+    }
+    .tagline h1:before {
+        left: 7%;
+        width: 15%;
+    }
+    .tagline h1:after {
+        right: 7%;
+        width: 15%;
+    }
+    .last-col:before
+    .last-col:after {
+        width: 10%;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .col-50 img {
+        max-width: 70%;
+        margin-bottom: 30px;
+    }
+    .input-line {
+        bottom: 210px;
+    }
+    .tagline h1 {
+        font-size: 45px;
+        font-weight: 500;
+    }
+}
