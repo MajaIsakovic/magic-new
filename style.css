@@ -501,12 +501,23 @@ input::placeholder {
     display: none;
 }
 
+.active1{
+    background-color: rgb(19, 30, 40);
+    /* border-left: 1px solid rgb(120, 125, 131); */
+    /* border-left: 1px solid #00adca;
+    border-right: 1px solid #00adca; */
+    background-image: url('btn-selected.svg');
+    background-repeat: no-repeat;
+    color: red;
+}
+
 .active > .button{
     background-color: rgb(19, 30, 40);
     /* border-left: 1px solid rgb(120, 125, 131); */
     /* border-left: 1px solid #00adca;
     border-right: 1px solid #00adca; */
     background-image: url('btn-selected.svg');
+    background-repeat: no-repeat;
 }
 
 .active > .numbers{
@@ -758,8 +769,13 @@ input::placeholder {
     .col-50 .text-wrap button {
         height: 48px;
     }
+
     .input-line {
         bottom: 85px;
+    }
+
+    .button{
+        font-size: 12px;
     }
 }
 

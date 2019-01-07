@@ -1,6 +1,16 @@
-console.log(123);
-document.getElementById('London').style.display = "block";
+// / Onload set class
+window.onload = function() {
+  // document.getElementById("1").className = 'active';
+  // document.getElementsById('button').style.color = "red";
+  document.getElementById('button').style.backgroundImage = "url('btn-selected.svg')";
+  document.getElementById('button').style.backgroundRepeat = "no-repeat";
+  document.getElementById("button").classList.add("active");
 
+};
+
+
+document.getElementById('London').style.display = "block";
+// document.getElementById('button').style.color = "red";
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -126,3 +136,5 @@ $(document).ready(function() {
   }
      
 });
+
+
